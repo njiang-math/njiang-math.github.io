@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ning Jiang | Applied Mathematics</title>
+  <style>
+    :root{
+      --bg:#ffffff; --card:#ffffff; --ink:#111827; --muted:#4b5563; --accent:#0ea5e9;
+      --link:#1d4ed8; --pill:#eef2f7; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:960px;margin:0 auto;padding:28px 18px 56px}
+    header{display:flex;gap:24px;align-items:center;margin:8px 0 24px}
+    header img{width:112px;height:112px;border-radius:16px;object-fit:cover;border:1px solid var(--border)}
+    h1{font-size:28px;margin:0 0 4px}
+    h2{font-size:22px;margin:28px 0 10px;border-bottom:1px solid var(--border);padding-bottom:6px}
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0}
+    nav a{background:var(--pill);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-weight:600;color:var(--ink)}
+    .grid{display:block}
+    main{max-width:720px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px;margin:18px 0 26px;box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+    main > .card + .card{margin-top:28px}
+    .muted{color:var(--muted)}
+    .list-tight li{margin-bottom:8px}
+    .pill{display:inline-block;background:var(--pill);border:1px solid var(--border);padding:2px 8px;border-radius:999px;font-size:12px;margin-right:6px}
+    footer{margin-top:40px;color:var(--muted)}
+    code,pre{background:#f6f8fa;border:1px solid var(--border);border-radius:10px;padding:2px 6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="images/profile.jpg" alt="Profile photo of Ning Jiang" />
+      <div>
+        <h1>Ning Jiang</h1>
+        <div class="muted">Department of Mathematics & Statistics · University of Massachusetts Amherst</div>
+        <div class="muted">Email: <a href="mailto:ningjiang@umass.edu">ningjiang@umass.edu</a></div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#research">Research &amp; Publications</a>
+          <a href="#talks">Presentations</a>
+          <a href="#teaching">Teaching</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card">
+          <h2>About</h2>
+          <p>
+            I am a Ph.D. candidate in Mathematics at the University of Massachusetts Amherst.
+            My research lies at the intersection of <strong>stochastic analysis</strong>, <strong>applied dynamical systems</strong>,
+            and <strong>machine learning</strong>, with applications to epidemiology and opinion dynamics.
+          </p>
+        </section>
+
+        <section id="education" class="card">
+          <h2>Education</h2>
+          <ul class="list-tight">
+            <li>Ph.D., Mathematics, University of Massachusetts Amherst — In progress</li>
+            <li>B.S., Mathematics, University of Massachusetts Amherst — May 2021</li>
+          </ul>
+        </section>
+
+        <section id="research" class="card">
+          <h2>Research</h2>
+          <p>
+            My research interests are in machine learning and applied dynamical systems, including stochastic stability of stochastic processes, machine learning and data assimilation, and
+            connections to epidemiological models and opinion dynamics.
+          </p>
+          <ul class="list-tight">
+            <li>
+              <strong>Feynman–Kac–Lyapunov (FKL) framework:</strong> Extended a systematic method to construct Lyapunov
+              functions for coupled “driving–driven” SDEs and proposed a neural solver for the high-dimensional
+              Feynman–Kac equation that yields the Lyapunov pre-factor.
+            </li>
+            <li>
+              <strong>Mobility-based SIRS:</strong> Introduced a mobility variable to explain overestimation of final size in
+              classical SIR; proved smaller final size for fixed <em>R<sub>0</sub></em> and identifiability of the mobility
+              distribution from infection time series; learned mobility via a feedforward network using DCT modes.
+            </li>
+            <li>
+              <strong>ANN prediction of true COVID-19 infections.</strong> Recovered daily infections via
+              deconvolution using death counts and a time-varying IFR, then trained a biology-informed neural
+              model mapping confirmed cases/testing/population features to true infections.
+            </li>
+          </ul>
+          <h3>Publications</h3>
+          <ol>
+            <li>
+              Chu, W., <strong>Jiang, N.</strong>, &amp; Li, Y. Constructing Lyapunov functions of stochastic differential equations by solving the Feynman–Kac equation (2025). Preprint.
+            </li>
+            <li>
+              <strong>Jiang, N.</strong>, Chu, W., &amp; Li, Y. Modeling, Inference, and Prediction in Mobility-Based Compartmental Models for Epidemiology. <em>SIAM Journal on Applied Mathematics</em> 85, 2355–2375 (2025). <a href="https://doi.org/10.1137/24M1691557">DOI</a>
+            </li>
+            <li>
+              <strong>Jiang, N.</strong>, Kolozsvary, C., &amp; Li, Y. Artificial Neural Network Prediction of COVID-19 Daily Infection Count. <em>Bulletin of Mathematical Biology</em> 86, 49 (2024). <a href="https://doi.org/10.1007/s11538-024-01275-3">DOI</a>
+            </li>
+          </ol>
+        </section>
+
+        
+
+        <section id="talks" class="card">
+          <h2>Presentations</h2>
+          <ul class="list-tight">
+            <li>Talk, October 2025, AMS Fall Southeastern Sectional Meeting, New Orleans, LA</li>
+            <li>Talk, May 2025, SIAM Conference on Applications of Dynamical Systems, Denver, CO</li>
+            <li>Poster, October 2024, SIAM Conference on Mathematics of Data Science, Atlanta, GA</li>
+          </ul>
+        </section>
+
+        <section id="teaching" class="card">
+          <h2>Teaching</h2>
+          <ul class="list-tight">
+            <li><strong>Instructor</strong>: Calculus I (Fall 2023, Fall 2025)</li>
+            <li><strong>Teaching Assistant</strong>: Actuarial Financial Math; Calculus for Life & Social Sciences I; Calculus I & II (Fall 2021–Spring 2024)</li>
+          </ul>
+        </section>
+
+      </main>
+
+      
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> Ning Jiang · 2025.</p>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
