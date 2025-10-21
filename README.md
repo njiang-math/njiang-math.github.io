@@ -1,2 +1,2 @@
-# njiang-math.github.io
+njiang-math.github.io
 Personal website
